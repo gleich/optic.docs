@@ -28,8 +28,13 @@ module.exports = {
           label: 'Tutorial',
         },
         {
-          href: 'https://github.com/facebook/docusaurus',
-          label: 'GitHub',
+          href: 'https://github.com/gleich/kiwi',
+          label: '📟 CLI Repository',
+          position: 'right',
+        },
+        {
+          href: 'https://github.com/gleich/kiwi.docs',
+          label: '📖 Docs Repository',
           position: 'right',
         },
       ],
