@@ -10,3 +10,15 @@ First, you need to create a folder for your kiwi project. Once you have done tha
 ```sh
 kiwi setup
 ```
+
+## What did we just get?
+
+Here are the folders and files that kiwi just created for you:
+
+| **File/Folder** | **Description**                                                                                  |
+| --------------- | ------------------------------------------------------------------------------------------------ |
+| `kiwi.toml`     | The configuration file for kiwi                                                                  |
+| `README.md`     | Basic README file                                                                                |
+| `templates/`    | A folder where templates are stored. We will learn more about templates in the templates section |
+| `.git`          | A new repository was automatically created for you                                               |
+| `.gitignore`    | Ignore file for git                                                                              |
