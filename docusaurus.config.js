@@ -3,7 +3,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
-  title: '🥝 kiwi',
+  title: '🥝',
   tagline: 'Schoolwork as code',
   url: 'https://docs.kiwi.mattglei.ch',
   baseUrl: '/',
@@ -21,12 +21,6 @@ module.exports = {
         src: 'img/kiwi.png',
       },
       items: [
-        {
-          type: 'doc',
-          docId: 'intro',
-          position: 'left',
-          label: 'Tutorial',
-        },
         {
           href: 'https://github.com/gleich/kiwi',
           label: '📟 CLI Repository',
