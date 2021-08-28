@@ -4,6 +4,8 @@ slug: '/'
 id: intro
 ---
 
+⚠️ kiwi's documentation is not done ⚠️
+
 # What is kiwi?
 
 Kiwi is a tool to help you write your schoolwork (e.g. worksheets, essays, lab reports, etc) as code using [LaTeX](https://en.wikipedia.org/wiki/LaTeX) or markdown and with a number of [automation features](#-automation) and a powerful [template system](#-templates). It is primarily controlled from the command line but editor extensions and a desktop app are planned for the future. Read more to see how kiwi could benefit you! Here are some core features:
