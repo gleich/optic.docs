@@ -78,7 +78,7 @@ module.exports = {
       {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          editUrl: 'https://github.com/gleich/kiwi.docs/edit/main/website/',
+          editUrl: 'https://github.com/gleich/kiwi.docs/edit/main/',
           routeBasePath: '/',
         },
       },
