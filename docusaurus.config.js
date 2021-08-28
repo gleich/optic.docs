@@ -4,8 +4,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
   title: '🥝 kiwi',
-  tagline: 'Dinosaurs are cool',
-  url: 'https://your-docusaurus-test-site.com',
+  tagline: 'Schoolwork as code',
+  url: 'https://docs.kiwi.mattglei.ch',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -15,10 +15,10 @@ module.exports = {
   trailingSlash: false,
   themeConfig: {
     navbar: {
-      title: 'My Site',
+      title: '',
       logo: {
-        alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        alt: '🥝',
+        src: 'img/kiwi.png',
       },
       items: [
         {
@@ -47,33 +47,20 @@ module.exports = {
           ],
         },
         {
-          title: 'Community',
+          title: 'Repositories',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
-              label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
-            },
-          ],
-        },
-        {
-          title: 'More',
-          items: [
-            {
-              label: 'GitHub',
+              label: 'CLI',
               href: 'https://github.com/gleich/kiwi',
+            },
+            {
+              label: 'Documentation',
+              href: 'https://github.com/gleich/kiwi.docs',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Matt Gleich`,
     },
     prism: {
       theme: lightCodeTheme,
@@ -87,14 +74,7 @@ module.exports = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl: 'https://github.com/gleich/kiwi.docs/edit/main/website/',
-        },
-        blog: {
-          showReadingTime: true,
-          editUrl:
-            'https://github.com/glecih/kiwi.docs/edit/main/website/blog/',
-        },
-        theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          routeBasePath: '/',
         },
       },
     ],
