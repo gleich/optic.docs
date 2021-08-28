@@ -1,9 +1,9 @@
 ---
-id: configuration
+id: kiwi.toml
 description: Let's look at the configuration file you just got
 ---
 
-# Configuration
+# kiwi.toml
 
 Configuration is stored in a [TOML](https://toml.io/en/) file called `kiwi.toml`. If did the last step of running `kiwi setup` you should already have one filled in with your responses to the CLI's questions. Below is a basic configuration file:
 

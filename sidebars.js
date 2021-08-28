@@ -17,8 +17,8 @@ module.exports = {
     },
     {
       type: 'category',
-      label: 'Setup',
-      items: ['setup/initialize', 'setup/configuration'],
+      label: 'Tutorial',
+      items: ['tutorial/initialize', 'tutorial/kiwi.toml'],
     },
   ],
 };
