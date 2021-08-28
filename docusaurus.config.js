@@ -66,6 +66,11 @@ module.exports = {
       darkTheme: darkCodeTheme,
     },
   },
+  themeConfig: {
+    prism: {
+      additionalLanguages: ['toml'],
+    },
+  },
   presets: [
     [
       '@docusaurus/preset-classic',

@@ -18,7 +18,7 @@ module.exports = {
     {
       type: 'category',
       label: 'Setup',
-      items: ['setup/initialize'],
+      items: ['setup/initialize', 'setup/configuration'],
     },
   ],
 };
