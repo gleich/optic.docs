@@ -32,7 +32,7 @@ If you try to write LaTeX manually at a large scale you will quickly realize tha
 
 Using [cargo](https://doc.rust-lang.org/cargo/getting-started/installation.html) you can install kiwi by running the following command in your terminal of choice:
 
-```sh
+```bash
 cargo install kiwi-cli
 ```
 
