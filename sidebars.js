@@ -23,6 +23,7 @@ module.exports = {
         'tutorial/kiwi.toml',
         'tutorial/templates',
         'tutorial/new',
+        'tutorial/build',
       ],
     },
   ],
