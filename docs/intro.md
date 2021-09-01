@@ -6,27 +6,27 @@ id: intro
 
 # What is kiwi?
 
-⚠️ kiwi's documentation is not done ⚠️
+⚠️ kiwi's documentation is **not** done ⚠️
 
-Kiwi is a tool to help you write your schoolwork (e.g. worksheets, essays, lab reports, etc) as code using [LaTeX](https://en.wikipedia.org/wiki/LaTeX) or markdown and with a number of [automation features](#-automation) and a powerful [template system](#-templates). It is primarily controlled from the command line but editor extensions and a desktop app are planned for the future. Read more to see how kiwi could benefit you! Here are some core features:
+Kiwi is a tool to help you write your schoolwork (e.g. worksheets, essays, lab reports, etc) as code using [LaTeX](https://en.wikipedia.org/wiki/LaTeX) or markdown. With several [automation features](#introduction-to-the-automation) and a powerful [template system](tutorial/templates.md) it removes a lot of the pain points you would encounter if you tried to do it all manually. It's primarily controlled from the command line but editor extensions and a desktop app are planned for the future. Read more to see how kiwi could benefit you! Here are some core features:
 
 - Creating documents
-- Writing markdown that is then transpiled to LaTeX
 - Organizing documents
+- Writing markdown that is then transpiled (converted) to LaTeX
 - Powerful templates
 
 ## Why schoolwork as code?
 
 tl;dr coding is cool and school is boring (also LaTeX documents just look awesome).
 
-## Taste of the Automation
+## Introduction to the Automation
 
 If you try to write LaTeX manually at a large scale you will quickly realize that it is pretty repetitive. Having a tool to automatically create, organize, and build documents for you saves a ton of time and removes a ton of pain points. Kiwi can do all of this for you with only two commands:
 
 | **Command**  | **Description**                                         |
 | ------------ | ------------------------------------------------------- |
 | `kiwi new`   | Create a new document and put it in an organized folder |
-| `kiwi build` | Build the last updated document                         |
+| `kiwi build` | Build the last updated document into a PDF              |
 
 ## Installing kiwi
 
@@ -34,6 +34,12 @@ Using [cargo](https://doc.rust-lang.org/cargo/getting-started/installation.html)
 
 ```bash
 cargo install kiwi-cli
+```
+
+To make sure that everything is working properly please run the following command:
+
+```bash
+kiwi --version
 ```
 
 <details>

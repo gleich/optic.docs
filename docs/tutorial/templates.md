@@ -12,14 +12,14 @@ Understanding how kiwi templates work is very important if you want to use kiwi 
 - Stored in the `templates/` directory at the root of your kiwi project.
 - Use the [handlebars template engine](https://handlebarsjs.com).
 - LaTeX templates end with `.tex.hbs` and markdown templates end with `.md.hbs` (`.hbs` is the file extension for handlebars files).
-- There are two types of templates: [branch](#branch-template) and [root](#root-templates). They work together like this:
+- There are two types of templates: [branches](#branch-template) and [roots](#root-templates). They work together like this:
   1. Run `kiwi new` to create a new branch file based on a branch template that you select.
-  2. Write in the branch file.
+  2. Write your essay or whatever other type of schoolwork you're writing in the branch file.
   3. Run `kiwi build` to put the branch file in the root file and build a PDF off of that file. If the branch is markdown it will auto be converted to LaTeX code at this step.
 
 ## Branch Templates
 
-You do the actual writing in-branch files. Branch templates are templates for branches that are then selected when you run `kiwi new`. These files are very simple so you can focus on writing. They can be either markdown or LaTeX. Below is an example of a basic branch template:
+You do the actual writing in branch files. Branch templates are templates for branches that are then selected when you run `kiwi new`. These files are very simple so you can focus on writing. They can be either markdown or LaTeX. Below is an example of a basic branch template:
 
 ```txt title="example.md.hbs"
 <!--
