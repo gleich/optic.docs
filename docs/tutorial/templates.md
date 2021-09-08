@@ -49,16 +49,16 @@ root > default.tex.hbs
 
 ### Permeable
 
-Off of this structure, we can get the class name and document type but we need to use have a permeable at the start of the file for some other information. This required information is the time that the file is created and what root file is being used. This permeable needs to be at the top of the file in a comment for the format you are using. Below is what the permeable in LaTeX and then in markdown:
+Off of this structure, we can get the class name and document type but we need to use have a preamble at the start of the file for some other information. This required information is the time that the file is created and what root file is being used. This preamble needs to be at the top of the file in a comment for the format you are using. Below is what the preamble in LaTeX and then in markdown:
 
-```latex title="LaTeX permeable"
+```latex title="LaTeX preamble"
 \iffalse
 created > {{time.simple_date}}
 root > {{root_filename}}
 \fi
 ```
 
-```md title="Markdown permeable"
+```md title="Markdown preamble"
 <!--
 created > {{time.simple_date}}
 root > {{root_filename}}
@@ -75,7 +75,7 @@ When you run `kiwi build` the branch file you were writing gets put into a root 
 \author{ {{author}} }
 \date{ {{time.date}} }
 
-{{required_permeable}}
+{{required_preamble}}
 
 \begin{document}
 	\maketitle
