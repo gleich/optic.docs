@@ -19,6 +19,7 @@ module.exports = {
       type: 'category',
       label: 'Tutorial',
       items: [
+        'tutorial/learning-latex',
         'tutorial/initialize',
         'tutorial/kiwi.toml',
         'tutorial/templates',
