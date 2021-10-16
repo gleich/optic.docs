@@ -76,6 +76,9 @@ module.exports = {
           editUrl: 'https://github.com/gleich/kiwi.docs/edit/main/',
           routeBasePath: '/',
         },
+        theme: {
+          customCss: [require.resolve('./src/custom.css')],
+        },
       },
     ],
   ],

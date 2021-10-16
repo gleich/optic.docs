@@ -7,80 +7,74 @@ description: Learn the basics of templates in kiwi
 
 Understanding how kiwi templates work is very important if you want to use kiwi effectively. Let's get right into it! I highly suggest reading this page a few times until you understand it.
 
-## Basics
+## Branch v.s. Root Basics
 
-- Stored in the `templates/` directory at the root of your kiwi project.
-- Use the [handlebars template engine](https://handlebarsjs.com).
-- LaTeX templates end with `.tex.hbs` and markdown templates end with `.md.hbs` (`.hbs` is the file extension for handlebars files).
-- There are two types of templates: [branches](#branch-template) and [roots](#root-templates). They work together like this:
-  1. Run `kiwi new` to create a new branch file based on a branch template that you select.
-  2. Write your essay or whatever other type of schoolwork you're writing in the branch file.
-  3. Run `kiwi build` to put the branch file in the root file and build a PDF off of that file. If the branch is markdown it will auto be converted to LaTeX code at this step.
+- Branch: Where you write the document you are working on. Written in Markdown or LaTeX. The Markdown is converted to LaTeX at compile time.
+- Root: Configuration file for your document that gets loaded at compile time. Written in LaTeX.
 
-## Branch Templates
+So if you were writing an essay for school you would use a root file to configure the margins, font size, etc. The branch file would then store the contents of your essay.
 
-You do the actual writing in branch files. Branch templates are templates for branches that are then selected when you run `kiwi new`. These files are very simple so you can focus on writing. They can be either markdown or LaTeX. Below is an example of a basic branch template:
+## Roots
 
-```txt title="example.md.hbs"
-<!--
-created > {{time.simple_date}}
-root > {{root_filename}}
--->
-```
+Assuming that you have read the [Learn LaTeX in 30 minutes by Overleaf](https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes) you should be familiar with the [preamble](https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minute). Root files are basically just the preamble part of the document.
 
-When you run `kiwi new` a new branch file will be created in a folder according to the following folder structure:
-
-```txt
-.
-└── docs/
-    └── Class Name (e.g. AP Physics)
-        └── Month Name (e.g. March)
-            └── Document Type (e.g. Worksheet)
-```
-
-The template then looks like this when filled in:
-
-```md
-<!--
-created > 2021-08-20
-root > default.tex.hbs
--->
-```
-
-### Permeable
-
-Off of this structure, we can get the class name and document type but we need to use have a preamble at the start of the file for some other information. This required information is the time that the file is created and what root file is being used. This preamble needs to be at the top of the file in a comment for the format you are using. Below is what the preamble in LaTeX and then in markdown:
-
-```latex title="LaTeX preamble"
-\iffalse
-created > {{time.simple_date}}
-root > {{root_filename}}
-\fi
-```
-
-```md title="Markdown preamble"
-<!--
-created > {{time.simple_date}}
-root > {{root_filename}}
--->
-```
-
-## Root Templates
-
-When you run `kiwi build` the branch file you were writing gets put into a root template. Below is an example of a root template:
+Here is what a very basic root template file looks like:
 
 ```latex
 \documentclass{report}
-\title{ {{name}} }
-\author{ {{author}} }
-\date{ {{time.date}} }
 
 {{required_preamble}}
 
 \begin{document}
-	\maketitle
-	{{branch.content}}
+    {{branch.content}}
 \end{document}
 ```
 
-Template fields such as `{{name}}` need to have spaces next to them in the LaTeX so they can function properly.
+At compile time the line `{{branch.content}}` is replaced with the content of the branch file and the PDF is built off of that LaTeX file.
+
+## Branches
+
+Branch files are just where you write your document. Below is an example template that's written in markdown:
+
+```md
+<!--
+created > {{time.simple_date}}
+   root > {{root_filename}}
+-->
+
+# Summary of Chapter
+
+-
+
+# Sources
+
+-
+```
+
+At the top of every branch is a configuration section that tells kiwi some basic information used at compile time. Every branch _must_ have this at the top. We can write the same template file in LaTeX:
+
+```latex
+\iffalse
+created > {{time.simple_date}}
+   root > {{root_filename}}
+\fi
+
+\section{Summary of Chapter}
+
+\begin{itemize}
+    \item
+\end{itemize}
+
+\section{Sources}
+
+\begin{itemize}
+    \item
+\end{itemize}
+```
+
+## Example Workflow
+
+Let's say you want to write a formal paper for your English class. Branches and root files would be used in the following way:
+
+- Root: Use a root template that provides double line spacing, Times New Roman font, and other formatting options.
+- Branch: The actual content of the essay.
