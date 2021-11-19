@@ -5,7 +5,7 @@ description: Tips for learning LaTeX
 
 # Learn LaTeX
 
-LaTeX looks very scary if you've never used it before. If you know Markdown you can easily learn LaTeX!. Below are some basic elements in LaTeX compared to their markdown equivalent:
+LaTeX looks very scary if you've never used it before. If you know Markdown you can easily learn LaTeX! Below are some basic elements in LaTeX compared to their markdown equivalent:
 
 ## Basic Elements
 
