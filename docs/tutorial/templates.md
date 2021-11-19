@@ -9,7 +9,7 @@ Understanding how kiwi templates work is very important if you want to use kiwi 
 
 ## Branch v.s. Root Basics
 
-- Branch: Where you write the document you are working on. Written in Markdown or LaTeX. The Markdown is converted to LaTeX at compile time.
+- Branch: Where you write the document you are working on. Written in Markdown or LaTeX. If Markdown is being used it gets automatically converted to LaTeX at compile time.
 - Root: Configuration file for your document that gets loaded at compile time. Written in LaTeX.
 
 So if you were writing an essay for school you would use a root file to configure the margins, font size, etc. The branch file would then store the contents of your essay.
@@ -74,7 +74,7 @@ created > {{time.simple_date}}
 
 ## Example Workflow
 
-Let's say you want to write a formal paper for your English class. Branches and root files would be used in the following way:
+Let's say you want to write a formal paper for your English class. Branches and root templates would be used in the following way:
 
 - Root: Use a root template that provides double line spacing, Times New Roman font, and other formatting options.
 - Branch: The actual content of the essay.
