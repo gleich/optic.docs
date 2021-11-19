@@ -1,7 +1,7 @@
 ---
+id: intro
 description: Schoolwork as code
 slug: '/'
-id: intro
 ---
 
 # What is kiwi?
@@ -17,7 +17,7 @@ Kiwi is a tool to help you write your schoolwork (e.g. worksheets, essays, lab r
 
 ## Why schoolwork as code?
 
-tl;dr coding is cool and school is boring (also LaTeX documents just look awesome).
+tl;dr coding is cool and school is boring (also LaTeX documents just look awesome and help make something _really_ boring a little more interesting).
 
 ## Introduction to the Automation
 
