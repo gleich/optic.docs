@@ -11,10 +11,7 @@
 
 module.exports = {
   mySidebar: [
-    {
-      type: 'doc',
-      id: 'intro',
-    },
+    'intro',
     {
       type: 'category',
       label: 'Tutorial',
@@ -25,7 +22,9 @@ module.exports = {
         'tutorial/templates',
         'tutorial/new',
         'tutorial/build',
+        'tutorial/next-steps',
       ],
     },
+    'tips',
   ],
 };
