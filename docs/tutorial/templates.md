@@ -1,11 +1,11 @@
 ---
 id: templates
-description: Learn the basics of templates in kiwi
+description: Learn the basics of templates in optic
 ---
 
 # Templates
 
-Understanding how kiwi templates work is very important if you want to use kiwi effectively. Let's get right into it! I highly suggest reading this page a few times until you understand it.
+Understanding how optic templates work is very important if you want to use optic effectively. Let's get right into it! I highly suggest reading this page a few times until you understand it.
 
 ## Branch v.s. Root Basics
 
@@ -51,7 +51,7 @@ created > {{time.simple_date}}
 -
 ```
 
-At the top of every branch is a configuration section that tells kiwi some basic information used at compile time. Every branch _must_ have this at the top. We can write the same template file in LaTeX:
+At the top of every branch is a configuration section that tells optic some basic information used at compile time. Every branch _must_ have this at the top. We can write the same template file in LaTeX:
 
 ```latex
 \iffalse

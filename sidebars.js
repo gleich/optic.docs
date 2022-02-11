@@ -18,7 +18,7 @@ module.exports = {
       items: [
         'tutorial/learning-latex',
         'tutorial/initialize',
-        'tutorial/kiwi.toml',
+        'tutorial/optic.toml',
         'tutorial/templates',
         'tutorial/new',
         'tutorial/build',

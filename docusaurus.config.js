@@ -3,31 +3,31 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
-  title: '🥝',
+  title: 'optic',
   tagline: 'Schoolwork as code',
-  url: 'https://docs.kiwi.mattglei.ch',
+  url: 'https://docs.optic.mattglei.ch',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'gleich',
-  projectName: 'kiwi.docs',
+  projectName: 'optic.docs',
   trailingSlash: false,
   themeConfig: {
     navbar: {
       title: '',
       logo: {
         alt: '🥝',
-        src: 'img/kiwi.png',
+        src: 'img/optic.png',
       },
       items: [
         {
-          href: 'https://github.com/gleich/kiwi',
+          href: 'https://github.com/gleich/optic',
           label: '📟 CLI Repository',
           position: 'right',
         },
         {
-          href: 'https://github.com/gleich/kiwi.docs',
+          href: 'https://github.com/gleich/optic.docs',
           label: '📖 Docs Repository',
           position: 'right',
         },
@@ -50,11 +50,11 @@ module.exports = {
           items: [
             {
               label: 'CLI',
-              href: 'https://github.com/gleich/kiwi',
+              href: 'https://github.com/gleich/optic',
             },
             {
               label: 'Documentation',
-              href: 'https://github.com/gleich/kiwi.docs',
+              href: 'https://github.com/gleich/optic.docs',
             },
           ],
         },
@@ -73,7 +73,7 @@ module.exports = {
       {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          editUrl: 'https://github.com/gleich/kiwi.docs/edit/main/',
+          editUrl: 'https://github.com/gleich/optic.docs/edit/main/',
           routeBasePath: '/',
         },
         theme: {

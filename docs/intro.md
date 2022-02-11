@@ -4,11 +4,11 @@ description: Schoolwork as code
 slug: '/'
 ---
 
-# What is kiwi?
+# What is optic?
 
-⚠️ kiwi's documentation is **not** done ⚠️
+⚠️ optic's documentation is **not** done ⚠️
 
-Kiwi is a tool to help you write your schoolwork (e.g. worksheets, essays, lab reports, etc) as code using [LaTeX](https://en.wikipedia.org/wiki/LaTeX) or markdown. With several [automation features](#introduction-to-the-automation) and a powerful [template system](tutorial/templates.md) it removes a lot of the pain points you would encounter if you tried to do it all manually. It's primarily controlled from the command line but editor extensions and a desktop app are planned for the future. Read more to see how kiwi could benefit you! Here are some core features:
+Optic is a tool to help you write your schoolwork (e.g. worksheets, essays, lab reports, etc) as code using [LaTeX](https://en.wikipedia.org/wiki/LaTeX) or markdown. With several [automation features](#introduction-to-the-automation) and a powerful [template system](tutorial/templates.md) it removes a lot of the pain points you would encounter if you tried to do it all manually. It's primarily controlled from the command line but editor extensions and a desktop app are planned for the future. Read more to see how optic could benefit you! Here are some core features:
 
 - Creating documents
 - Organizing documents
@@ -21,31 +21,31 @@ tl;dr coding is cool and school is boring (also LaTeX documents just look awesom
 
 ## Introduction to the Automation
 
-If you try to write LaTeX manually at a large scale you will quickly realize that it is pretty repetitive. Having a tool to automatically create, organize, and build documents for you saves a ton of time and removes a ton of pain points. Kiwi can do all of this for you with only two commands:
+If you try to write LaTeX manually at a large scale you will quickly realize that it is pretty repetitive. Having a tool to automatically create, organize, and build documents for you saves a ton of time and removes a ton of pain points. Optic can do all of this for you with only two commands:
 
-| **Command**  | **Description**                                         |
-| ------------ | ------------------------------------------------------- |
-| `kiwi new`   | Create a new document and put it in an organized folder |
-| `kiwi build` | Build the last updated document into a PDF              |
+| **Command**   | **Description**                                         |
+| ------------- | ------------------------------------------------------- |
+| `optic new`   | Create a new document and put it in an organized folder |
+| `optic build` | Build the last updated document into a PDF              |
 
-## Installing kiwi
+## Installing optic
 
-Using [cargo](https://doc.rust-lang.org/cargo/getting-started/installation.html) you can install kiwi by running the following command in your terminal of choice:
+Using [cargo](https://doc.rust-lang.org/cargo/getting-started/installation.html) you can install optic by running the following command in your terminal of choice:
 
 ```bash
-cargo install kiwi-cli
+cargo install optic
 ```
 
 To make sure that everything is working properly please run the following command:
 
 ```bash
-kiwi --version
+optic --version
 ```
 
 <details>
   <summary>Help, my install didn't work!</summary>
   <div>
-    <div>Sorry to hear that your install didn't go smoothly! See if you have any of the problems listed below. If not, feel free to create an issue on our <a href="https://github.com/gleich/kiwi/issues/new?assignees=%40gleich&labels=bug&template=bug.md&title=" target="_blank" >CLI's GitHub Repository</a>.</div>
+    <div>Sorry to hear that your install didn't go smoothly! See if you have any of the problems listed below. If not, feel free to create an issue on our <a href="https://github.com/gleich/optic/issues/new?assignees=%40gleich&labels=bug&template=bug.md&title=" target="_blank" >CLI's GitHub Repository</a>.</div>
     <br/>
     <details>
       <summary>cargo command not found</summary>
@@ -54,9 +54,9 @@ kiwi --version
       </div>
     </details>
     <details>
-      <summary>kiwi command not found</summary>
+      <summary>optic command not found</summary>
       <div>
-        This means that kiwi is not in your $PATH. Please find where cargo installs binaries on your system. By default that would be a folder called .cargo in your home directory.
+        This means that optic is not in your $PATH. Please find where cargo installs binaries on your system. By default that would be a folder called .cargo in your home directory.
       </div>
     </details>
   </div>
@@ -68,6 +68,6 @@ You then need the following programs installed:
 - `pdflatex` - Builds a PDF from a LaTeX document
 - `git` - Keep track of your changes
 
-## How to learn kiwi
+## How to learn optic
 
-The best way to learn kiwi is by using kiwi! Follow along in the documentation with a dummy project to see how kiwi works and how it can help you.
+The best way to learn optic is by using optic! Follow along in the documentation with a dummy project to see how optic works and how it can help you.
